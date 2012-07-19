@@ -1,5 +1,6 @@
 body > .frame {
   padding: 20px 0;
+  overflow: hidden;
 }
 .frame {
   width: 1000px;

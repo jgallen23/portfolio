@@ -19,3 +19,76 @@
 		background: transparent;
   }
 }
+
+
+/* content boxes */
+.content .box {
+	transition: opacity 0.5s;
+	opacity: 1;
+}
+.content .anim-out {
+	opacity: 0;
+}
+
+
+/* test crazy animation */
+
+//init
+.preanim {
+	.header {
+		.me {
+			transform: rotate(-20deg);
+		}
+		.twitter,
+		.github {
+			transform: translateY(-300px);
+		}
+	}
+	.content .box {
+		transform: scale(0);
+	}
+
+	.nav {
+		transform: translateX(100%);
+	}
+}
+
+//start
+.load {
+	.header {
+		.me {
+			//transform: rotate(-20deg);
+			transform: rotate(0);
+			transition: -webkit-transform 0.3s ease 0.5s;
+		}
+		.twitter {
+			transform: translateY(0);
+			transition: -webkit-transform 0.5s ease 0.1s;
+		}
+		.github {
+			transform: translateY(0);
+			transition: -webkit-transform 0.5s ease 0.3s;
+		}
+	}
+
+	.nav {
+		transform: translateX(0);
+		transition: -webkit-transform 0.4s ease 0.4s;
+	}
+	.content .box {
+		animation: bounce 0.5s ease 0.5s;
+		animation-fill-mode: forwards;
+	}
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale3d(0.1,0.1,1);
+  }
+  75% {
+    transform: scale3d(1.08,1.08,1);
+  }
+  100% {
+    transform: scale3d(1,1,1);
+  }
+}

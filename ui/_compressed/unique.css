@@ -3,7 +3,8 @@
   height: 85px;
 }
 .me {
-  transform: rotate(-15deg);
+  position: relative;
+  z-index: 10;
 }
 .me img {
   float: left;
@@ -13,6 +14,7 @@
   margin: 5px 0;
 }
 .nav {
+  z-index: 1;
   margin: 15px 0;
   padding-left: 250px;
   height: 40px;
@@ -21,15 +23,30 @@
   border: 1px solid #e2e0e0;
 }
 .nav li a {
-  padding: 11px 30px 9px 30px;
+  padding: 11px 30px 10px;
   background: transparent;
-  border: 1px solid transparent;
-  border-width: 0 1px;
+  border: 1px solid #f0f0f0;
+  border-width: 0 0 0 1px;
   transition: background-color 0.5s;
+  position: relative;
+}
+.nav li a span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  height: 1px;
+  display: block;
+  transition: width 0.7s;
 }
 .nav li.selected a,
 .nav li a:hover {
   background: #fff;
-  border-right: 1px solid #e2e2e0;
-  border-left: 1px solid #e2e2e0;
+}
+.nav li.selected a span,
+.nav li a:hover span {
+  width: 100%;
+}
+.nav li.selected a {
+  background-image: linear-gradient(#f0f0f0 0%, #fff 100%);
 }

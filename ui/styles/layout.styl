@@ -1,16 +1,17 @@
-width = 1000px
+frame-width = 1000px
 
 body > .frame {
 	padding: 20px 0;
+	overflow: hidden;
 }
 .frame {
-	width: width;
+	width: frame-width;
 	margin: 0 auto;
 }
 .col3 {
 	clearfix()
 	.col {
-		width: (width/3 - 20)px;
+		width: (frame-width/3 - 20)px;
 		margin: 0 10px;
 		float: left;
 	}
@@ -19,7 +20,7 @@ body > .frame {
 .col4 {
 	clearfix()
 	.col {
-		width: (width/4 - 20)px;
+		width: (frame-width/4 - 20)px;
 		margin: 0 10px;
 		float: left;
 	}
