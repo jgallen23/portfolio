@@ -1,0 +1,96 @@
+/* nav */
+@-moz-keyframes nav-on {
+  0% {
+    border-bottom-width: 1px;
+    background: transparent;
+  }
+
+  100% {
+    background: sites-color;
+  }
+}
+@-webkit-keyframes nav-on {
+  0% {
+    border-bottom-width: 1px;
+    background: transparent;
+  }
+
+  100% {
+    background: sites-color;
+  }
+}
+@-o-keyframes nav-on {
+  0% {
+    border-bottom-width: 1px;
+    background: transparent;
+  }
+
+  100% {
+    background: sites-color;
+  }
+}
+@-ms-keyframes nav-on {
+  0% {
+    border-bottom-width: 1px;
+    background: transparent;
+  }
+
+  100% {
+    background: sites-color;
+  }
+}
+@keyframes nav-on {
+  0% {
+    border-bottom-width: 1px;
+    background: transparent;
+  }
+
+  100% {
+    background: sites-color;
+  }
+}
+@-moz-keyframes nav-off {
+  0% {
+    background: sites-color;
+  }
+
+  100% {
+    background: transparent;
+  }
+}
+@-webkit-keyframes nav-off {
+  0% {
+    background: sites-color;
+  }
+
+  100% {
+    background: transparent;
+  }
+}
+@-o-keyframes nav-off {
+  0% {
+    background: sites-color;
+  }
+
+  100% {
+    background: transparent;
+  }
+}
+@-ms-keyframes nav-off {
+  0% {
+    background: sites-color;
+  }
+
+  100% {
+    background: transparent;
+  }
+}
+@keyframes nav-off {
+  0% {
+    background: sites-color;
+  }
+
+  100% {
+    background: transparent;
+  }
+}

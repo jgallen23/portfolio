@@ -1,0 +1,15 @@
+.nav .all a {
+  border-bottom: 1px solid all-color;
+}
+.nav .sites a {
+  border-bottom: 1px solid sites-color;
+}
+.nav .code a {
+  border-bottom: 1px solid code-color;
+}
+.nav .apps a {
+  border-bottom: 1px solid apps-color;
+}
+.content .box.site p {
+  border-bottom: 3px solid sites-color;
+}

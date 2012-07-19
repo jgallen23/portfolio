@@ -1,0 +1,49 @@
+.header .box {
+	padding: 10px;
+	height: 85px;
+}
+.me {
+	transform: rotate(-15deg);
+	img {
+		float: left;
+		margin-right: 30px;
+	}
+
+	h1 {
+		margin: 5px 0;
+	}
+	h2 {
+	}
+}
+
+.nav {
+	margin: 15px 0;
+	padding-left: 250px;
+	height: 40px;
+	line-height: 40px;
+
+	background-image: linear-gradient(#FFFFFF 0%, #F0F0F0 100%);
+	border: 1px solid #E2E0E0;
+
+
+	li {
+		a {
+			padding: 11px 30px 9px 30px;
+			//border-right: 1px solid #e2e0e0;
+			//border-left: 1px solid lighten(#e2e0e0, 20);
+			background: transparent
+			border: 1px solid transparent;
+			border-width: 0 1px;
+
+			transition: background-color 0.5s;
+
+		}
+		&.selected a,
+		a:hover {
+			background: #fff;
+			border-right: 1px solid #e2e2e0;
+			border-left: 1px solid #e2e2e0;
+		}
+		
+	}
+}
