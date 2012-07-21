@@ -1,15 +1,16 @@
 
-build-styles:
-	./node_modules/.bin/stylus -o ui/_compressed/ -u ./node_modules/nib/ ui/styles/
+styles:
+	./node_modules/.bin/stylus -o ui/_compressed/ -u ./node_modules/nib/ ui/styles/common.styl
 
-build-views:
-	./node_modules/.bin/jade < views/index.jade > index.html
+views:
+	./node_modules/.bin/js-yaml -j data.yaml > /tmp/data.json
+	./node_modules/.bin/jade -o /tmp/data.json < views/index.jade > index.html
 
-build: build-styles build-views
+build: styles views
 
 install:
 	npm install stylus
 	npm install nib
 	npm install jade
 
-.PHONY: build-styles install
+.PHONY: views styles install

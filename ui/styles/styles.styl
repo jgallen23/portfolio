@@ -1,26 +1,61 @@
 
-
 .nav .all a span {
 	background-color: all-color;
 }
 
-.nav .sites a span {
-	background-color: sites-color;
+.nav .site a span {
+	background-color: site-color;
 }
 
 .nav .code a span {
 	background-color: code-color;
 }
 
-.nav .apps a span {
-	background-color: apps-color;
+.nav .app a span {
+	background-color: app-color;
 }
 
-.content .box.site p {
-	border-bottom: 3px solid sites-color;
+.content .box {
+  overflow: hidden;
+  border-bottom: 5px solid #ccc;
+
+  .name {
+  }
+
+  .description {
+    height: 100%;
+    padding: 50px 10px 0px;
+    position: relative;
+    color: #000;
+    top: -100%;
+    border-radius: 5px 5px 0 0;
+
+    p {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+content-box(color) {
+  border-color: color;
+  .name {
+  }
+
+  .description {
+    background: rgba(color, 0.95);
+  }
 }
 
-.content .box.site:hover {
-	border: 1px solid sites-color;
-	cursor: pointer;
+.content .site {
+  content-box(site-color)
+}
+.content .code {
+  content-box(code-color)
+}
+.content .app {
+  content-box(app-color)
 }

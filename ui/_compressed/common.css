@@ -173,23 +173,54 @@ body > .frame {
   float: left;
 }
 .nav .all a span {
-  background-color: #93cfec;
+  background-color: #e2e2e0;
 }
-.nav .sites a span {
+.nav .site a span {
   background-color: #cdf397;
 }
 .nav .code a span {
-  background-color: #ffdc9f;
+  background-color: #93cfec;
 }
-.nav .apps a span {
+.nav .app a span {
   background-color: #ffa79f;
 }
-.content .box.site p {
-  border-bottom: 3px solid #cdf397;
+.content .box {
+  overflow: hidden;
+  border-bottom: 5px solid #ccc;
 }
-.content .box.site:hover {
-  border: 1px solid #cdf397;
+.content .box .description {
+  height: 100%;
+  padding: 50px 10px 0px;
+  position: relative;
+  color: #000;
+  top: -100%;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+.content .box .description p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.content .box:hover {
   cursor: pointer;
+}
+.content .site {
+  border-color: #cdf397;
+}
+.content .site .description {
+  background: rgba(205,243,151,0.95);
+}
+.content .code {
+  border-color: #93cfec;
+}
+.content .code .description {
+  background: rgba(147,207,236,0.95);
+}
+.content .app {
+  border-color: #ffa79f;
+}
+.content .app .description {
+  background: rgba(255,167,159,0.95);
 }
 ul.hl {
   zoom: 1;
@@ -221,7 +252,7 @@ ul.hl li {
   background-size: 100% 100%;
   margin-bottom: 20px;
 }
-.content .box p {
+.content .box .name {
   background: rgba(0,0,0,0.8);
   color: #fff;
   position: absolute;
@@ -233,8 +264,6 @@ ul.hl li {
   text-align: center;
   font-size: 20px;
   text-shadow: 1px 1px 2px #000;
-  -webkit-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
 }
 .header .box {
   padding: 10px;
@@ -281,7 +310,7 @@ ul.hl li {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 10%;
+  width: 25%;
   height: 1px;
   display: block;
   -webkit-transition: width 0.7s;
@@ -321,13 +350,6 @@ ul.hl li {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: alpha(opacity=0);
 }
-.preanim .header .me {
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-}
 .preanim .header .twitter,
 .preanim .header .github {
   -webkit-transform: translateY(-300px);
@@ -337,11 +359,9 @@ ul.hl li {
   transform: translateY(-300px);
 }
 .preanim .content .box {
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -o-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: alpha(opacity=0);
 }
 .preanim .nav {
   -webkit-transform: translateX(100%);
@@ -349,18 +369,6 @@ ul.hl li {
   -o-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-}
-.load .header .me {
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  -o-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
-  -webkit-transition: -webkit-transform 0.3s ease 0.5s;
-  -moz-transition: -webkit-transform 0.3s ease 0.5s;
-  -o-transition: -webkit-transform 0.3s ease 0.5s;
-  -ms-transition: -webkit-transform 0.3s ease 0.5s;
-  transition: -webkit-transform 0.3s ease 0.5s;
 }
 .load .header .twitter {
   -webkit-transform: translateY(0);
@@ -399,111 +407,14 @@ ul.hl li {
   transition: -webkit-transform 0.4s ease 0.4s;
 }
 .load .content .box {
-  -webkit-animation: bounce 0.5s ease 0.5s;
-  -moz-animation: bounce 0.5s ease 0.5s;
-  -o-animation: bounce 0.5s ease 0.5s;
-  -ms-animation: bounce 0.5s ease 0.5s;
-  animation: bounce 0.5s ease 0.5s;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-@-moz-keyframes nav-on {
-  0% {
-    border-bottom-width: 1px;
-    background: transparent;
-  }
-
-  100% {
-    background: #cdf397;
-  }
-}
-@-webkit-keyframes nav-on {
-  0% {
-    border-bottom-width: 1px;
-    background: transparent;
-  }
-
-  100% {
-    background: #cdf397;
-  }
-}
-@-o-keyframes nav-on {
-  0% {
-    border-bottom-width: 1px;
-    background: transparent;
-  }
-
-  100% {
-    background: #cdf397;
-  }
-}
-@-ms-keyframes nav-on {
-  0% {
-    border-bottom-width: 1px;
-    background: transparent;
-  }
-
-  100% {
-    background: #cdf397;
-  }
-}
-@keyframes nav-on {
-  0% {
-    border-bottom-width: 1px;
-    background: transparent;
-  }
-
-  100% {
-    background: #cdf397;
-  }
-}
-@-moz-keyframes nav-off {
-  0% {
-    background: #cdf397;
-  }
-
-  100% {
-    background: transparent;
-  }
-}
-@-webkit-keyframes nav-off {
-  0% {
-    background: #cdf397;
-  }
-
-  100% {
-    background: transparent;
-  }
-}
-@-o-keyframes nav-off {
-  0% {
-    background: #cdf397;
-  }
-
-  100% {
-    background: transparent;
-  }
-}
-@-ms-keyframes nav-off {
-  0% {
-    background: #cdf397;
-  }
-
-  100% {
-    background: transparent;
-  }
-}
-@keyframes nav-off {
-  0% {
-    background: #cdf397;
-  }
-
-  100% {
-    background: transparent;
-  }
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transition: opacity 0.5s ease 0.5s;
+  -moz-transition: opacity 0.5s ease 0.5s;
+  -o-transition: opacity 0.5s ease 0.5s;
+  -ms-transition: opacity 0.5s ease 0.5s;
+  transition: opacity 0.5s ease 0.5s;
 }
 @-moz-keyframes bounce {
   0% {
@@ -629,4 +540,163 @@ ul.hl li {
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+}
+.content .kindspark {
+  background-image: url("/ui/images/screenshots/kindspark.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .kindspark {
+    background-image: url("/ui/images/screenshots/kindspark@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .jotbox {
+  background-image: url("/ui/images/screenshots/jotbox.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .jotbox {
+    background-image: url("/ui/images/screenshots/jotbox@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .visits {
+  background-image: url("/ui/images/screenshots/visits.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .visits {
+    background-image: url("/ui/images/screenshots/visits@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .n2tec {
+  background-image: url("/ui/images/screenshots/n2tec.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .n2tec {
+    background-image: url("/ui/images/screenshots/n2tec@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .ehow {
+  background-image: url("/ui/images/screenshots/ehow.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .ehow {
+    background-image: url("/ui/images/screenshots/ehow@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .ventureedge {
+  background-image: url("/ui/images/screenshots/ventureedge.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .ventureedge {
+    background-image: url("/ui/images/screenshots/ventureedge@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .mytimes {
+  background-image: url("/ui/images/screenshots/mytimes.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .mytimes {
+    background-image: url("/ui/images/screenshots/mytimes@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .portfolio {
+  background-image: url("/ui/images/screenshots/portfolio.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .portfolio {
+    background-image: url("/ui/images/screenshots/portfolio@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .layouts {
+  background-image: url("/ui/images/screenshots/layouts.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .layouts {
+    background-image: url("/ui/images/screenshots/layouts@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .toc {
+  background-image: url("/ui/images/screenshots/toc.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .toc {
+    background-image: url("/ui/images/screenshots/toc@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .hubinfo {
+  background-image: url("/ui/images/screenshots/hubinfo.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .hubinfo {
+    background-image: url("/ui/images/screenshots/hubinfo@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .routie {
+  background-image: url("/ui/images/screenshots/routie.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .routie {
+    background-image: url("/ui/images/screenshots/routie@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .resistance {
+  background-image: url("/ui/images/screenshots/resistance.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .resistance {
+    background-image: url("/ui/images/screenshots/resistance@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .travolta {
+  background-image: url("/ui/images/screenshots/travolta.jpg");
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .content .travolta {
+    background-image: url("/ui/images/screenshots/travolta@2x.jpg");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
+}
+.content .box {
+  -webkit-background-size: 230px 220px;
+  -moz-background-size: 230px 220px;
+  background-size: 230px 220px;
 }

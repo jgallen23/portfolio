@@ -18,20 +18,25 @@ html
       ul.nav.hl
         li.all: a(href="#") All
           span.line
-        li.sites: a(href="#sites") Sites
+        li.site: a(href="#sites") Sites
           span.line
-        li.apps: a(href="#apps") Apps
+        li.app: a(href="#apps") Apps
           span.line
         li.code: a(href="#code") Code
           span.line
         li.contact: a(href="#contact") Contact
           span.line
       div.content.col4
-        blocks = [1,2,3,4,5,6,7,8]
-        each block in blocks
-          div.box.col.site(style="background-image:url(ui/images/333.gif)")
-            p Kindspark #{block}
+        for item in items
+          a.box.col(class="#{item.type} #{item.id || ""}", href=item.url)
+            div.description
+              if item.description
+                for para in item.description
+                  p= para
+            p.name= item.name
 
     script(src="ui/vendor/jquery/jquery-1.7.2.min.js")
+    script(src="ui/vendor/hoverintent/jquery.hoverIntent.js")
     script(src="ui/vendor/routie/routie.js")
+    script(src="ui/vendor/fidel/fidel.js")
     script(src="ui/scripts/app.js")

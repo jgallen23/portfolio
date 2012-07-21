@@ -1,26 +1,57 @@
-$('body').addClass('load');
+$('body').addClass('load').on('webkitAnimationEnd', function() { $('body').removeClass('load').removeClass('preanim'); });
+
+var filter = function(className) {
+
+  $('.nav li').removeClass('selected');
+  $('.nav ' + className).addClass('selected');
+  $('.content .box').hide();
+  $('.content ' + className).show();
+}
+
 routie({
   //all
   '': function() {
-    console.log('all');
     $('.nav li').removeClass('selected');
     $('.nav .all').addClass('selected');
-    var el = $('.content .anim-out').show()
-    setTimeout(function() {
-      el.removeClass('anim-out');
-    }, 100);
+
+    $('.content .box').show();
   },
   'sites': function() {
-
-    console.log('sites');
-    $('.nav li').removeClass('selected');
-    $('.nav .sites').addClass('selected');
-    $('.content .box:eq(2)')
-      .addClass('anim-out')
-      .one('webkitTransitionEnd', function() {
-        console.log('end');
-        $(this).hide();
-      });
+    filter('.site');
+  },
+  'apps': function() {
+    filter('.app');
+  },
+  'code': function() {
+    filter('.code');
   }
 
 });
+
+
+
+/* content box */
+(function(el) {
+  var hoverIn = function() {
+    var $el = $(this);
+    $('.name', $el).animate({
+      bottom: '170px'
+    })
+    $('.description', $el).animate({
+      top: '0'
+    });
+  }
+
+  var hoverOut = function() {
+    var $el = $(this);
+    $('.name', $el).animate({
+      bottom: '0px'
+    })
+    $('.description', $el).animate({
+      top: '-100%'
+    });
+
+  }
+
+  el.hoverIntent(hoverIn, hoverOut);
+})($('.content .box'));

@@ -1,0 +1,72 @@
+---
+items:
+  - 
+    name: Kindspark
+    type: site
+    id: kindspark
+    url: http://kindspark.com
+    description: 
+      - A site to pay it forward to your community
+      - Role:&nbsp;Co-founder, in charge of product and technology
+      - Technology:&nbsp;Node.js, MongoDB, HTML5, CSS3, jQuery
+  -
+    name: Jotbox
+    type: app
+    id: jotbox
+    description: 
+      - An iPhone app to quickly email yourself.  It's great for notes, reminders and ideas.
+  -
+    name: Visits
+    type: app
+    id: visits
+    description:
+      - Google Analytics for Mac
+  -
+    name: eHow
+    type: site
+    id: ehow
+  -
+    name: The Venture Edge
+    type: site
+    id: ventureedge
+  -
+    name: n2Tec
+    type: site
+    id: n2tec
+  -
+    name: Portfolio
+    type: code
+    id: portfolio
+    description: 
+      - You can view the source for this portfolio on github.
+  -
+    name: jQuery TOC
+    id: toc
+    type: code
+  -
+    name: Layouts
+    id: layouts
+    type: code
+  -
+    name: HubInfo
+    id: hubinfo
+    type: code
+  -
+    name: Routie
+    id: routie
+    type: code
+  -
+    name: My Times
+    type: app
+    id: mytimes
+  -
+    name: Resistance
+    id: resistance
+    type: code
+  #-
+    #name: My Times for iPhone
+    #type: app
+  -
+    name: Margaret Travolta
+    id: travolta
+    type: site

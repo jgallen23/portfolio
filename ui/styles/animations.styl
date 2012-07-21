@@ -1,26 +1,4 @@
 
-
-/* nav */
-
-@keyframes nav-on {
-  from {
-		border-bottom-width: 1px;
-		background: transparent;
-  }
-  to {
-		background: sites-color;
-  }
-}
-@keyframes nav-off {
-  from {
-		background: sites-color;
-  }
-  to {
-		background: transparent;
-  }
-}
-
-
 /* content boxes */
 .content .box {
 	transition: opacity 0.5s;
@@ -36,16 +14,14 @@
 //init
 .preanim {
 	.header {
-		.me {
-			transform: rotate(-20deg);
-		}
 		.twitter,
 		.github {
 			transform: translateY(-300px);
 		}
 	}
 	.content .box {
-		transform: scale(0);
+		//transform: scale(0);
+    opacity: 0;
 	}
 
 	.nav {
@@ -56,11 +32,6 @@
 //start
 .load {
 	.header {
-		.me {
-			//transform: rotate(-20deg);
-			transform: rotate(0);
-			transition: -webkit-transform 0.3s ease 0.5s;
-		}
 		.twitter {
 			transform: translateY(0);
 			transition: -webkit-transform 0.5s ease 0.1s;
@@ -76,8 +47,10 @@
 		transition: -webkit-transform 0.4s ease 0.4s;
 	}
 	.content .box {
-		animation: bounce 0.5s ease 0.5s;
-		animation-fill-mode: forwards;
+		//animation: bounce 0.5s ease 0.5s;
+		//animation-fill-mode: forwards;
+    opacity: 1;
+    transition: opacity 0.5s ease 0.5s;
 	}
 }
 
