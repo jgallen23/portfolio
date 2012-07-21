@@ -38,14 +38,14 @@ routie({
       bottom: '170px'
     })
     $('.description', $el).animate({
-      top: '0'
+      top: '0%'
     });
   }
 
   var hoverOut = function() {
     var $el = $(this);
     $('.name', $el).animate({
-      bottom: '0px'
+      bottom: '0'
     })
     $('.description', $el).animate({
       top: '-100%'
