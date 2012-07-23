@@ -41,5 +41,7 @@ $.fidel('github', {
       .attr('data-timestamp', push.created_at)
       .relativeTime()
       .attr('href', commit.url);
+    this.find('h3 a')
+      .attr('href', 'http://github.com/'+this.username);
   }
 });

@@ -25,9 +25,13 @@ $.fidel('twitter', {
     });
   },
   render: function(tweet) {
+    var url = 'http://twitter.com/' + tweet.user.screen_name;
     this.find('.name')
       .html('@' + tweet.user.screen_name)
-      .attr('href', 'http://twitter.com/' + tweet.user.screen_name);
+      .attr('href', url);
+
+    this.find('h3 a')
+      .attr('href', url);
 
     var text = this.processLinks(tweet.text);
     this.find('.desc span').html(text);
