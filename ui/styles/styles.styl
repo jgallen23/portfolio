@@ -1,27 +1,13 @@
 
 a { 
-  color: link-color;
+  color: color-link;
 }
-.nav .all a span {
-	background-color: all-color;
-}
-
-.nav .site a span {
-	background-color: site-color;
-}
-
-.nav .code a span {
-	background-color: code-color;
-}
-
-.nav .app a span {
-	background-color: app-color;
+.nav a span {
+  background-color: color-link;
 }
 
 .content .box {
   overflow: hidden;
-  border-bottom: 5px solid #ccc;
-
   .name {
   }
 
@@ -31,7 +17,7 @@ a {
     position: relative;
     color: #000;
     top: -100%;
-    border-radius: 5px 5px 0 0;
+    border-radius: 3px;
 
     p {
       margin: 10px 0;
@@ -43,22 +29,49 @@ a {
     cursor: pointer;
   }
 }
-content-box(color) {
-  border-bottom-color: color;
-  .name {
-  }
 
-  .description {
-    background: rgba(color, 0.95);
+.content {
+  alpha = 0.95
+  .kindspark .description {
+    background: rgba(color-green, alpha);
   }
-}
-
-.content .site {
-  content-box(site-color)
-}
-.content .code {
-  content-box(code-color)
-}
-.content .app {
-  content-box(app-color)
+  .jotbox .description {
+    background: rgba(color-red, alpha);
+  }
+  .visits .description {
+    background: rgba(color-blue, alpha);
+  }
+  .n2tec .description{
+    background: rgba(color-blue, alpha);
+  }
+  .ehow .description {
+    background: rgba(color-green, alpha);
+  }
+  .ventureedge .description {
+    background: rgba(color-green, alpha);
+  }
+  .mytimes .description {
+    background: rgba(color-gray, alpha);
+  }
+  .portfolio .description {
+    background: rgba(color-dark-blue, alpha);
+  }
+  .layouts .description {
+    background: rgba(color-purple, alpha);
+  }
+  .toc .description {
+    background: rgba(color-blue, alpha);
+  }
+  .hubinfo .description {
+    background: rgba(color-yellow, alpha);
+  }
+  .routie .description{
+    background: rgba(color-red, alpha);
+  }
+  .resistance .description {
+    background: rgba(color-yellow, alpha);
+  }
+  .travolta .description {
+    background: rgba(color-blue, alpha);
+  }
 }

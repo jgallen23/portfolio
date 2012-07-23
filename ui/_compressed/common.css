@@ -175,21 +175,11 @@ body > .frame {
 a {
   color: #3ca9dc;
 }
-.nav .all a span {
-  background-color: #e2e2e0;
-}
-.nav .site a span {
-  background-color: #cdf397;
-}
-.nav .code a span {
-  background-color: #93cfec;
-}
-.nav .app a span {
-  background-color: #ffa79f;
+.nav a span {
+  background-color: #3ca9dc;
 }
 .content .box {
   overflow: hidden;
-  border-bottom: 5px solid #ccc;
 }
 .content .box .description {
   height: 100%;
@@ -197,8 +187,8 @@ a {
   position: relative;
   color: #000;
   top: -100%;
-  -webkit-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 .content .box .description p {
   margin: 10px 0;
@@ -207,23 +197,47 @@ a {
 .content .box:hover {
   cursor: pointer;
 }
-.content .site {
-  border-bottom-color: #cdf397;
-}
-.content .site .description {
+.content .kindspark .description {
   background: rgba(205,243,151,0.95);
 }
-.content .code {
-  border-bottom-color: #93cfec;
+.content .jotbox .description {
+  background: rgba(255,167,159,0.95);
 }
-.content .code .description {
+.content .visits .description {
   background: rgba(147,207,236,0.95);
 }
-.content .app {
-  border-bottom-color: #ffa79f;
+.content .n2tec .description {
+  background: rgba(147,207,236,0.95);
 }
-.content .app .description {
+.content .ehow .description {
+  background: rgba(205,243,151,0.95);
+}
+.content .ventureedge .description {
+  background: rgba(205,243,151,0.95);
+}
+.content .mytimes .description {
+  background: rgba(226,226,224,0.95);
+}
+.content .portfolio .description {
+  background: rgba(60,169,220,0.95);
+}
+.content .layouts .description {
+  background: rgba(171,147,236,0.95);
+}
+.content .toc .description {
+  background: rgba(147,207,236,0.95);
+}
+.content .hubinfo .description {
+  background: rgba(255,240,159,0.95);
+}
+.content .routie .description {
   background: rgba(255,167,159,0.95);
+}
+.content .resistance .description {
+  background: rgba(255,240,159,0.95);
+}
+.content .travolta .description {
+  background: rgba(147,207,236,0.95);
 }
 ul.hl {
   zoom: 1;
@@ -266,7 +280,7 @@ ul.hl li {
   height: 30px;
   line-height: 27px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   text-shadow: 1px 1px 2px #000;
 }
 .updates {
@@ -340,7 +354,7 @@ ul.hl li {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 25%;
+  width: 0%;
   height: 1px;
   display: block;
   -webkit-transition: width 0.7s;
