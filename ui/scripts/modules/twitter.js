@@ -1,9 +1,9 @@
 $.fidel('twitter', {
   init: function() {
     this.screenName = this.el.data('username');
-    this.update();
+    this.fetch();
   },
-  update: function() {
+  fetch: function() {
     var self = this;
     $.ajax({
       url: 'https://api.twitter.com/1/statuses/user_timeline.json',
@@ -26,7 +26,7 @@ $.fidel('twitter', {
   },
   render: function(tweet) {
     this.find('.name')
-      .html(tweet.user.screen_name + ': ')
+      .html('@' + tweet.user.screen_name)
       .attr('href', 'http://twitter.com/' + tweet.user.screen_name);
 
     var text = this.processLinks(tweet.text);

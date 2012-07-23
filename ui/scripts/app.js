@@ -57,3 +57,4 @@ routie({
 })($('.content .box'));
 
 $('.header .box:eq(1)').twitter();
+$('.header .box:eq(2)').github();

@@ -12,16 +12,17 @@ html
           h1 Greg Allen
           h2 Developer
         div.box.col.updates(data-username=twitter)
-          a.date(data-timestamp="Sat Jul 21 19:39:38 +0000 2012")
+          a.date
           h3.title Twitter
           p.desc 
-            a.name()
+            a.name
             span
         div.box.col.updates(data-username=github)
-          a.date(href="", data-timestamp="2012-07-21T18:39:20Z")
+          a.date
           h3.title Github
-          p.name(href="") jgallen23/dotfiles
-          p.desc updated vim plugins
+          p.desc
+            a.name
+            span
       ul.nav.hl
         li.all: a(href="#") All
           span.line
@@ -48,4 +49,5 @@ html
     script(src="ui/vendor/routie/routie.js")
     script(src="ui/vendor/fidel/fidel.js")
     script(src="ui/scripts/modules/twitter.js")
+    script(src="ui/scripts/modules/github.js")
     script(src="ui/scripts/app.js")

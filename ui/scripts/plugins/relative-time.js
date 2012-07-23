@@ -12,7 +12,7 @@ $.fn.relativeTime = function() {
     if (v > 0) return v + ' minute' + (v > 1 ? 's' : '') + ' ago';
     return 'Just now';
   }
-  this.each(function() {
+  return this.each(function() {
 
     var el = $(this);
     var time = el.data('timestamp');

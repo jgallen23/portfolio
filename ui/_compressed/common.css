@@ -172,6 +172,9 @@ body > .frame {
   margin: 0 10px;
   float: left;
 }
+a {
+  color: #3ca9dc;
+}
 .nav .all a span {
   background-color: #e2e2e0;
 }
@@ -205,19 +208,19 @@ body > .frame {
   cursor: pointer;
 }
 .content .site {
-  border-color: #cdf397;
+  border-bottom-color: #cdf397;
 }
 .content .site .description {
   background: rgba(205,243,151,0.95);
 }
 .content .code {
-  border-color: #93cfec;
+  border-bottom-color: #93cfec;
 }
 .content .code .description {
   background: rgba(147,207,236,0.95);
 }
 .content .app {
-  border-color: #ffa79f;
+  border-bottom-color: #ffa79f;
 }
 .content .app .description {
   background: rgba(255,167,159,0.95);
@@ -243,6 +246,7 @@ ul.hl li {
   background: #fff;
   -webkit-box-shadow: 0px 2px 7px -2px #999;
   box-shadow: 0px 2px 7px -2px #999;
+  border: 1px solid #adadad;
 }
 .content .box {
   position: relative;
@@ -266,20 +270,26 @@ ul.hl li {
   text-shadow: 1px 1px 2px #000;
 }
 .updates {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.5);
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #c2c2c2;
 }
 .updates .title {
   font-size: 16px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 .updates .date {
   float: right;
   margin: 4px 0 0 0;
   font-size: 11px;
   color: #747474;
+}
+.updates .name {
+  padding-right: 5px;
+}
+.updates .name::after {
+  content: ':';
 }
 .updates .desc {
   font-size: 12px;
