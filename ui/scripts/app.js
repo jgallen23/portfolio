@@ -55,3 +55,5 @@ routie({
 
   el.hoverIntent(hoverIn, hoverOut);
 })($('.content .box'));
+
+$('.header .box:eq(1)').twitter();

@@ -11,10 +11,17 @@ html
           img(src="ui/images/me.jpg", width="75")
           h1 Greg Allen
           h2 Developer
-        div.box.col.twitter
-          p twitter
-        div.box.col.github
-          p github
+        div.box.col.updates(data-username=twitter)
+          a.date(data-timestamp="Sat Jul 21 19:39:38 +0000 2012")
+          h3.title Twitter
+          p.desc 
+            a.name()
+            span
+        div.box.col.updates(data-username=github)
+          a.date(href="", data-timestamp="2012-07-21T18:39:20Z")
+          h3.title Github
+          p.name(href="") jgallen23/dotfiles
+          p.desc updated vim plugins
       ul.nav.hl
         li.all: a(href="#") All
           span.line
@@ -33,10 +40,12 @@ html
               if item.description
                 for para in item.description
                   p= para
-            p.name= item.name
+            h3.name= item.name
 
     script(src="ui/vendor/jquery/jquery-1.7.2.min.js")
     script(src="ui/vendor/hoverintent/jquery.hoverIntent.js")
+    script(src="ui/scripts/plugins/relative-time.js")
     script(src="ui/vendor/routie/routie.js")
     script(src="ui/vendor/fidel/fidel.js")
+    script(src="ui/scripts/modules/twitter.js")
     script(src="ui/scripts/app.js")
