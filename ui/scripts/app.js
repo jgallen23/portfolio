@@ -3,27 +3,38 @@ $('body').addClass('load').on('webkitAnimationEnd', function() { $('body').remov
 var filter = function(className) {
 
   $('.nav li').removeClass('selected');
-  $('.nav ' + className).addClass('selected');
-  $('.content .box').hide();
-  $('.content ' + className).show();
+  $('.nav .' + className).addClass('selected');
+
+  var els = $('.content .box').filter(function() {
+    var el = $(this);
+    
+    return (!el.hasClass(className) && el.css('display') != 'none');
+  });
+  console.log(className, els.length);
+  els 
+    .anim('fly-out', function() {
+      $('.content .' + className).show();
+    });
 }
 
+$('.content .box').hide();
 routie({
   //all
   '': function() {
     $('.nav li').removeClass('selected');
     $('.nav .all').addClass('selected');
 
+
     $('.content .box').show();
   },
   'sites': function() {
-    filter('.site');
+    filter('site');
   },
   'apps': function() {
-    filter('.app');
+    filter('app');
   },
   'code': function() {
-    filter('.code');
+    filter('code');
   }
 
 });
@@ -56,5 +67,5 @@ routie({
   el.hoverIntent(hoverIn, hoverOut);
 })($('.content .box'));
 
-$('.header .box:eq(1)').twitter();
-$('.header .box:eq(2)').github();
+//$('.header .box:eq(1)').twitter();
+//$('.header .box:eq(2)').github();

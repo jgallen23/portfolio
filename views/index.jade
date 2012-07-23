@@ -38,7 +38,7 @@ html
           span.line
       div.content.col4
         for item in items
-          a.box.col(class="#{item.type} #{item.id || ""}", href=item.url)
+          a.box.col.fly-in(class="#{item.type} #{item.id || ""}", href=item.url)
             div.description
               if item.description
                 for para in item.description
@@ -48,6 +48,7 @@ html
     script(src="ui/vendor/jquery/jquery-1.7.2.min.js")
     script(src="ui/vendor/hoverintent/jquery.hoverIntent.js")
     script(src="ui/scripts/plugins/relative-time.js")
+    script(src="ui/scripts/plugins/anim.js")
     script(src="ui/vendor/routie/routie.js")
     script(src="ui/vendor/fidel/fidel.js")
     script(src="ui/scripts/modules/twitter.js")
