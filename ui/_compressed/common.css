@@ -122,6 +122,9 @@ body {
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 .nav a {
   color: #333;
   font-size: 16px;
@@ -269,6 +272,7 @@ ul.hl li {
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 .content .box .name {
   background: rgba(0,0,0,0.8);
