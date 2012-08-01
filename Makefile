@@ -1,16 +1,13 @@
 
-styles:
-	./node_modules/.bin/stylus -o ui/_compressed/ -u ./node_modules/nib/ ui/styles/common.styl
+mash:
+	./node_modules/.bin/masher masher.yaml
 
 views:
-	./node_modules/.bin/js-yaml -j data.yaml > /tmp/data.json
-	./node_modules/.bin/jade -o /tmp/data.json < views/index.jade > index.html
+	./node_modules/.bin/markx -i views/index.jade -d data.yaml > index.html
+
+preview:
+	./node_modules/.bin/markx -i views/index.jade -d data.yaml -p
 
 build: styles views
 
-install:
-	npm install stylus
-	npm install nib
-	npm install jade
-
-.PHONY: views styles install
+.PHONY: views mash build preview

@@ -407,8 +407,7 @@ ul.hl li {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: alpha(opacity=0);
 }
-.preanim .header .twitter,
-.preanim .header .github {
+.preanim .header .updates {
   -webkit-transform: translateY(-300px);
   -moz-transform: translateY(-300px);
   -o-transform: translateY(-300px);
@@ -427,7 +426,7 @@ ul.hl li {
   -ms-transform: translateX(100%);
   transform: translateX(100%);
 }
-.load .header .twitter {
+.load .header .updates {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -o-transform: translateY(0);
@@ -438,18 +437,6 @@ ul.hl li {
   -o-transition: -webkit-transform 0.5s ease 0.1s;
   -ms-transition: -webkit-transform 0.5s ease 0.1s;
   transition: -webkit-transform 0.5s ease 0.1s;
-}
-.load .header .github {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -o-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.5s ease 0.3s;
-  -moz-transition: -webkit-transform 0.5s ease 0.3s;
-  -o-transition: -webkit-transform 0.5s ease 0.3s;
-  -ms-transition: -webkit-transform 0.5s ease 0.3s;
-  transition: -webkit-transform 0.5s ease 0.3s;
 }
 .load .nav {
   -webkit-transform: translateX(0);

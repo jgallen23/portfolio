@@ -1,28 +1,39 @@
-var onLast = function(els, eventName, each, callback) {
-  var index = 0;
-  var count = els.length;
+(function($) {
+  var vendorEvents = [
+    'AnimationEnd',
+    'webkitAnimationEnd',
+    'animationend',
+    'oAnimationEnd',
+    'MSAnimationEnd',
+    'TransistionEnd',
+    'webkitTransistionEnd',
+    'transitionend',
+    'oTransistionEnd',
+    'MSTransistionEnd',
+  ];
 
-  var check = function() {
-    each.call($(this));
-    index++;
-    if (count == index) {
-      callback.call(els);
+  var BindEvents = function(els) {
+    var index = 0;
+    var count = els.length;
+
+    var check = function() {
+      var el = $(this);
+      el.trigger('animationStep');
+
+      index++;
+      if (count == index) {
+        el.trigger('animationComplete');
+      }
     }
+    els.one(vendorEvents.join(' '), check);
+    if (count == 0) {
+      el.trigger('animationComplete');
+    }
+    return this;
   }
-  els.one(eventName, check);
-  if (count == 0) {
-    callback.call(this);
+
+  $.fn.animationEvents = function() {
+    new BindEvents(this);
+    return this;
   }
-}
-
-
-$.fn.anim = function(className, callback) {
-  new onLast(this, 'AnimationEnd webkitAnimationEnd animationend oAnimationEnd MSAnimationEnd', function() {
-    this.removeClass(className);
-    this.hide();
-  }, function() {
-    console.log('all done');
-    callback.call(this);
-  });
-  return this.addClass(className);
-}
+})(jQuery);

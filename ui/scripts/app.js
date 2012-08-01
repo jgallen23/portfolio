@@ -1,4 +1,11 @@
-$('body').addClass('load').on('webkitAnimationEnd', function() { $('body').removeClass('load').removeClass('preanim'); });
+$('body')
+  .animationEvents()
+  .one('animationComplete', function() {
+    $(this)
+      .removeClass('load')
+      .removeClass('preanim');
+  })
+  .addClass('load');
 
 var filter = function(className) {
 
@@ -7,23 +14,25 @@ var filter = function(className) {
 
   var els = $('.content .box').filter(function() {
     var el = $(this);
-    
     return (!el.hasClass(className) && el.css('display') != 'none');
   });
-  console.log(className, els.length);
+
   els 
-    .anim('fly-out', function() {
+    .animationEvents()
+    .one('animationComplete', function() {
+      els
+        .hide()
+        .removeClass('fly-out');
       $('.content .' + className).show();
-    });
+    })
+    .addClass('fly-out');
 }
 
-$('.content .box').hide();
 routie({
   //all
   '': function() {
     $('.nav li').removeClass('selected');
     $('.nav .all').addClass('selected');
-
 
     $('.content .box').show();
   },

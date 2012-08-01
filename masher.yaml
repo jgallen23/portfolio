@@ -1,0 +1,20 @@
+mash:
+  -
+    name: common
+    files:
+      - ui/styles/common.styl
+  -
+    name: common
+    files:
+      #- ui/vendor/jquery/jquery-1.7.2.min.js
+      - ui/vendor/hoverintent/jquery.hoverIntent.js
+      - ui/scripts/plugins/relative-time.js
+      - ui/scripts/plugins/anim.js
+      - ui/vendor/routie/routie.js
+      - ui/vendor/fidel/fidel.js
+      - ui/scripts/modules/twitter.js
+      - ui/scripts/modules/github.js
+      - ui/scripts/app.js
+options:
+  out: ui/_dist
+  #minify: true
