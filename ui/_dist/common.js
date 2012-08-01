@@ -528,34 +528,16 @@ $.fidel('github', {
 });
 
 
-$('body')
-  .animationEvents()
-  .one('animationComplete', function() {
-    $(this)
-      .removeClass('load')
-      .removeClass('preanim');
-  })
-  .addClass('load');
+$('body').addClass('load');
 
 var filter = function(className) {
 
   $('.nav li').removeClass('selected');
   $('.nav .' + className).addClass('selected');
 
-  var els = $('.content .box').filter(function() {
-    var el = $(this);
-    return (!el.hasClass(className) && el.css('display') != 'none');
-  });
+  $('.content .box').hide();
+  $('.content .'+className).show();
 
-  els 
-    .animationEvents()
-    .one('animationComplete', function() {
-      els
-        .hide()
-        .removeClass('fly-out');
-      $('.content .' + className).show();
-    })
-    .addClass('fly-out');
 }
 
 routie({
@@ -577,8 +559,6 @@ routie({
   }
 
 });
-
-
 
 /* content box */
 (function(el) {
