@@ -12,63 +12,63 @@
           <h1>Greg Allen</h1>
           <h2>UX/UI, Developer</h2>
         </div>
-        <div class="box col updates" data-username=twitter>
+        <div class="box col updates" data-username="<%= twitter %>">
           <a class="date"></a>
           <h3 class="title">
             <a>Twitter</a>
           </h3>
           <p class="desc">
-            <a class="name"/>
+            <a class="name"></a>
             <span/>
           </p>
         </div>
-        <div class="box col updates" data-username=github>
+        <div class="box col updates" data-username="<%= github %>">
           <a class="date"></a>
           <h3 class="title">
             <a>Github</a>
           </h3>
           <p class="desc">
-            <a class="name"/>
+            <a class="name"></a>
             <span/>
           </p>
         </div>
-			</div>
-			<ul class="nav hl">
-				<li class="all">
-					<a href="#">All</a>
-					<span class="line"/>
-				</li>
-				<li class="site">
-					<a href="#sites">Sites</a>
-					<span class="line"/>
-				</li>
-				<li class="app">
-					<a href="#apps">Apps</a>
-					<span class="line"/>
-				</li>
-				<li class="code">
-					<a href="#code">Code</a>
-					<span class="line"/>
-				</li>
-				<li class="contact">
-					<a href="#contact">Contact</a>
-					<span class="line"/>
-				</li>
-			</ul>
-			<div class="content col4">
-				<% items.forEach(function(item) { %>
-					<a href="<%= item.url %>" class="box col <%= item.type %> <%= item.id %>">
-						<div class="description">
-							<% if (item.description) { %>
-								<% item.description.forEach(function(p) { %>
-									<p><%= p %></p>
-								<% }) %>
-							<% } %>
-						</div>
-						<h3 class="name"><%= item.name %></h3>
-					</a>
-				<% }) %>
-			</div>
+      </div>
+      <ul class="nav hl">
+        <li class="all">
+          <a href="#">All</a>
+          <span class="line"/>
+        </li>
+        <li class="site">
+          <a href="#sites">Sites</a>
+          <span class="line"/>
+        </li>
+        <li class="app">
+          <a href="#apps">Apps</a>
+          <span class="line"/>
+        </li>
+        <li class="code">
+          <a href="#code">Code</a>
+          <span class="line"/>
+        </li>
+        <li class="contact">
+          <a href="#contact">Contact</a>
+          <span class="line"/>
+        </li>
+      </ul>
+      <div class="content col4">
+        <% items.forEach(function(item) { %>
+          <a href="<%= item.url %>" class="box col <%= item.type %> <%= item.id %>">
+            <div class="description">
+              <% if (item.description) { %>
+                <% item.description.forEach(function(p) { %>
+                  <p><%= p %></p>
+                <% }) %>
+              <% } %>
+            </div>
+            <h3 class="name"><%= item.name %></h3>
+          </a>
+        <% }) %>
+      </div>
     </div>
     <script src="ui/vendor/jquery/jquery-1.7.2.min.js"></script>
     <script src="ui/_dist/common.js"></script>
