@@ -51,7 +51,13 @@
             <div class="description">
               <% if (item.description) { %>
                 <% item.description.forEach(function(p) { %>
-                  <p><%= p %></p>
+                  <% if (typeof p == 'object') { %>
+                    <% for (var title in p) { %>
+                      <p><%= title %>: <%= p[title] %></p>
+                    <% } %>
+                  <% } else { %>
+                    <p><%= p %></p>
+                  <% } %>
                 <% }) %>
               <% } %>
             </div>

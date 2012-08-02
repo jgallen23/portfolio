@@ -3,128 +3,140 @@ tagline: UI/UX/Developer
 twitter: jgaui
 github: jgallen23
 nav:
-  -
-    name: All
+  - name: All
     url: "#"
     class: all
-  -
-    name: Sites
+  - name: Sites
     url: "#sites"
     class: site
-  -
-    name: Apps
+  - name: Apps
     url: "#apps"
     class: app
-  -
-    name: Code
+  - name: Code
     url: "#code"
     class: code
-  -
-    name: Contact
+  - name: Contact
     url: "#contact"
     class: contact
 services:
-  -
-    name: Front end development
+  - name: Front end development
     icon: code
-  -
-    name: UI/UX (Wireframes/Flows)
+  - name: UI/UX (Wireframes/Flows)
     icon: wires 
-  -
-    name: iOS Development
+  - name: iOS Development
     icon: app
 contacts:
-  -
-    name: Email
+  - name: Email
     icon: mail 
     url: mailto:me@gregallen.me 
-  -
-    name: Twitter
+  - name: Twitter
     icon: twitter 
     url: http://twitter.com/jgaui
-  -
-    name: Github
+  - name: Github
     icon: github
     url: http://github.com/jgallen23
-  -
-    name: Linked In
+  - name: Linked In
     icon: linkedIn
     url: 
-  -
-    name: Facebook
+  - name: Facebook
     icon: facebook 
     url: http://facebook.com/jga23
 items:
-  - 
-    name: Kindspark
+  - name: Kindspark
     type: site
     id: kindspark
     url: http://kindspark.com
     description: 
-      - A site to pay it forward to your community
-      - Role:&nbsp;Co-founder, in charge of product and technology
-      - Technology:&nbsp;Node.js, MongoDB, HTML5, CSS3, jQuery
-  -
-    name: Jotbox
+      - A site to pay it forward to your community.
+      - Role: Co-founder, in charge of product and technology.
+      - Technology: Node.js, MongoDB, HTML5, CSS3, jQuery
+  - name: Jotbox
     type: app
     id: jotbox
     description: 
-      - An iPhone app to quickly email yourself.  It's great for notes, reminders and ideas.
-  -
-    name: Visits
+      - An iPhone app to send notes, scribbles and photos to yourself.  It's great for reminders and ideas.
+      - Role: Spec'd and developed
+      - Technology: Objective C
+  - name: Visits
     type: app
     id: visits
     description:
-      - Google Analytics for Mac
-  -
-    name: eHow
+      - Visits is a Mac menubar app that pulls in your Google Analytics data.
+      - Role: Spec'd and developed
+      - Technology: Javascript, Objective C, HTML, CSS
+  - name: eHow
     type: site
     id: ehow
-  -
-    name: Portfolio
+    description:
+      - Top 20 site that focuses on how-to content.
+      - Title: Director of UI Engineering 
+      - Role: Lead a team in charge of front-end development.
+  - name: Portfolio
     type: code
     id: portfolio
     description: 
-      - You can view the source for this portfolio on github.
-  -
-    name: The Venture Edge
+      - View this source code for this portfolio. 
+      - Technology: HTML, Javascript, Stylus, Node.js
+  - name: The Venture Edge
     type: site
     id: ventureedge
-  -
-    name: n2Tec
+    description:
+      - A blog for tips on starting and running a successful buisness.
+      - Role: Spec'd and developed
+      - Technology: Python, Django, MySQL
+  - name: n2Tec
     type: site
     id: n2tec
-  -
-    name: jQuery TOC
+    description:
+      - National Network for Technology Entrepreneurship and Commercialization.
+      - Role: Spec'd and developed
+      - Technology: Python, Django, MySQL
+  - name: TOC
     id: toc
     type: code
-  -
-    name: Layouts
+    description:
+      - jQuery plugin to generate a table of contents for your site.
+      - Technology: Javascript, jQuery
+  - name: Layouts
     id: layouts
     type: code
-  -
-    name: HubInfo
+    description:
+      - An Alfred plugin and applescript that allows you to move and resize your applications.
+      - Technology: Applescript, Bash
+  - name: HubInfo
     id: hubinfo
     type: code
-  -
-    name: Routie
+    description:
+      - jQuery plugin that wigetizes your github repo to be placed on your site.
+      - Technology: Javascript, jQuery, Github API, JSONP
+  - name: Routie
     id: routie
     type: code
-  -
-    name: My Times
+    description:
+      - A tiny (800b) Javascript hash routing library.
+      - Technology: Javascript
+  - name: My Times
     type: app
     id: mytimes
-  -
-    name: Resistance
+    description:
+      - An iPad app for Google Reader.
+      - Role: Spec'd and developed
+      - Technology: Objective C, Google Reader API
+  - name: Resistance
     id: resistance
     type: code
-  #-
-    #name: My Times for iPhone
+    description:
+      - A flow control library for Javascript.
+      - Technology: Javascript
+  #-name: My Times for iPhone
     #type: app
-  -
-    name: Margaret Travolta
+  - name: Margaret Travolta
     id: travolta
     type: site
+    description:
+      - Margaret Travolta's porfolio site.
+      - Role: Spec'd and developed
+      - Technology: Python, webpy
 icons:
   all: icon-home
   code: icon-code

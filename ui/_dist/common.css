@@ -380,7 +380,7 @@ ul.hl li {
   cursor: pointer;
 }
 .content .description {
-  background: rgba(147,207,236,0.95);
+  background: rgba(147,207,236,0.97);
 }
 .content .kindspark {
   background-image: url("/ui/images/screenshots/kindspark.jpg");
