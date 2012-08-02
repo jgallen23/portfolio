@@ -1,6 +1,38 @@
 ---
+tagline: UI/UX/Developer
 twitter: jgaui
 github: jgallen23
+services:
+  -
+    name: Front end development
+    icon: code
+  -
+    name: UI/UX (Wireframes/Flows)
+    icon: wires 
+  -
+    name: iOS Development
+    icon: app
+contacts:
+  -
+    name: Email
+    icon: mail 
+    href: mailto:me@gregallen.me 
+  -
+    name: Twitter
+    icon: twitter 
+    href: http://twitter.com/jgaui
+  -
+    name: Github
+    icon: github
+    href: http://github.com/jgallen23
+  -
+    name: Linked In
+    icon: linkedIn
+    href: 
+  -
+    name: Facebook
+    icon: facebook 
+    href: http://facebook.com/jga23
 items:
   - 
     name: Kindspark
@@ -72,3 +104,14 @@ items:
     name: Margaret Travolta
     id: travolta
     type: site
+icons:
+  code: icon-code
+  wires: icon-pencil
+  app: icon-mobile
+  site: icon-cloud
+  mail: icon-mail-1
+  twitter: icon-twitter-bird
+  github: icon-github
+  linkedIn: icon-linkedin-rect
+  facebook: icon-facebook-1
+  

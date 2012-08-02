@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Greg Allen | UX/UI, Developer</title>
+    <title>Greg Allen | <%= tagline %></title>
+    <script src="ui/vendor/live/live.js"></script>
     <link rel="stylesheet" href="ui/_dist/common.css"/>
   </head>
   <body class="preanim">
@@ -10,7 +11,7 @@
         <div class="box col me">
           <img src="ui/images/me.jpg" alt="Greg Allen" width="75"/>
           <h1>Greg Allen</h1>
-          <h2>UX/UI, Developer</h2>
+          <h2><%= tagline %></h2>
         </div>
         <div class="box col updates" data-username="<%= twitter %>">
           <a class="date"></a>
@@ -35,29 +36,39 @@
       </div>
       <ul class="nav hl">
         <li class="all">
-          <a href="#">All</a>
-          <span class="line"/>
+          <a href="#">
+						All
+						<span class="line"/>
+					</a>
         </li>
         <li class="site">
-          <a href="#sites">Sites</a>
-          <span class="line"/>
+          <a href="#sites">
+						Sites
+						<span class="line"/>
+					</a>
         </li>
         <li class="app">
-          <a href="#apps">Apps</a>
-          <span class="line"/>
+          <a href="#apps">
+						Apps
+						<span class="line"/>
+					</a>
         </li>
         <li class="code">
-          <a href="#code">Code</a>
-          <span class="line"/>
+          <a href="#code">
+						Code
+						<span class="line"/>
+					</a>
         </li>
         <li class="contact">
-          <a href="#contact">Contact</a>
-          <span class="line"/>
+          <a href="#contact">
+						Contact
+						<span class="line"/>
+					</a>
         </li>
       </ul>
       <div class="content col4">
         <% items.forEach(function(item) { %>
-          <a href="<%= item.url %>" class="box col <%= item.type %> <%= item.id %>">
+          <a href="<%= item.url %>" class="box col has-details <%= item.type %> <%= item.id %>">
             <div class="description">
               <% if (item.description) { %>
                 <% item.description.forEach(function(p) { %>
@@ -65,9 +76,36 @@
                 <% }) %>
               <% } %>
             </div>
-            <h3 class="name"><%= item.name %></h3>
+            <h3 class="name">
+              <i class="<%= icons[item.type] %>"></i>
+              <%= item.name %>
+            </h3>
           </a>
         <% }) %>
+				<div class="box col contact">
+					<ul class="hl services">
+            <% services.forEach(function(service) { %>
+            <li>
+              <i class="<%= icons[service.icon] %>"></i>
+              <%= service.name %>
+            </li>
+            <% }) %>
+					</ul>
+					<h3 class="name">Services</h3>
+				</div>
+				<div class="box col contact">
+					<ul class="hl contacts">
+            <% contacts.forEach(function(contact) { %>
+              <li>
+                <a href="<%= contact.href %>">
+                  <i class="<%= icons[contact.icon] %>"></i>
+                  <%= contact.name %>
+                </a>
+              </li>
+            <% }) %>
+					</ul>
+					<h3 class="name">Contact</h3>
+				</div>
       </div>
     </div>
     <script src="ui/vendor/jquery/jquery-1.7.2.min.js"></script>

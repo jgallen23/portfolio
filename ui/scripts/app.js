@@ -54,7 +54,7 @@ routie({
   }
 
   el.hoverIntent(hoverIn, hoverOut);
-})($('.content .box'));
+})($('.content .has-details'));
 
 //$('.header .box:eq(1)').twitter();
 //$('.header .box:eq(2)').github();

@@ -2,6 +2,7 @@ mash:
   -
     name: common
     files:
+      - ui/fontello/css/portfolio.css
       - ui/styles/common.styl
   -
     name: common

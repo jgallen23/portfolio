@@ -228,6 +228,25 @@ a {
 .nav a span {
   background-color: #3ca9dc;
 }
+.content .box {
+  overflow: hidden;
+}
+.content .box .description {
+  height: 100%;
+  padding: 50px 10px 0px;
+  position: relative;
+  color: #000;
+  top: -100%;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.content .box .description p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.content .box:hover {
+  cursor: pointer;
+}
 .content .kindspark .description {
   background: rgba(205,243,151,0.95);
 }
@@ -352,69 +371,12 @@ ul.hl li {
   font-size: 12px;
   line-height: 1.5;
 }
-.content .box {
-  overflow: hidden;
-}
-.content .box .name i {
-  position: absolute;
-  right: 5px;
-  margin-top: 3px;
-  font-size: 14px;
-}
-.content .box .description {
-  height: 100%;
-  padding: 50px 10px 0px;
-  position: relative;
-  color: #000;
-  top: -100%;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-.content .box .description p {
-  margin: 10px 0;
-  line-height: 1.5;
-}
-.content .has-details:hover {
-  cursor: pointer;
-}
-.services {
-  margin: 10px 0;
-}
-.services li {
-  margin: 15px;
-  line-height: 20px;
-}
-.services li i {
-  font-size: 20px;
-  padding: 2px 5px 0 0;
-}
-.contacts li {
+.contact li {
   text-align: center;
-  padding: 10px 5px;
-  width: 33%;
 }
-.contacts i {
+.contact i {
   font-size: 48px;
-  padding-bottom: 3px;
   display: block;
-}
-.contacts .icon-linkedin-rect {
-  padding-left: 5px;
-}
-.contacts .icon-mail-1 {
-  padding-left: 8px;
-}
-.contacts a {
-  color: #333;
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  -ms-transition: color 0.5s;
-  transition: color 0.5s;
-}
-.contacts a:hover {
-  color: #3ca9dc;
-  text-decoration: none;
 }
 .header .box {
   padding: 10px;
