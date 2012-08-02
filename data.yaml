@@ -76,7 +76,7 @@ items:
     id: portfolio
     description: 
       - View this source code for this portfolio. 
-      - Technology: HTML, Javascript, Stylus, Node.js
+      - Technology: HTML, Javascript, Stylus, jQuery, Routie, Node.js
   - name: The Venture Edge
     type: site
     id: ventureedge
