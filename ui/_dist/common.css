@@ -178,7 +178,7 @@ h2 {
   color: #747474;
 }
 body > .frame {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   overflow: hidden;
 }
 .frame {
@@ -496,6 +496,12 @@ ul.hl li {
 .updates .desc {
   font-size: 12px;
   line-height: 1.5;
+}
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
 }
 .header .box {
   padding: 10px;
