@@ -2,7 +2,7 @@
 
 
 .icon-home:before { content: '\2302'; } /* '⌂' */
-.icon-cloud:before { content: '\2601'; } /* '☁' */
+.icon-cloud-1:before { content: '\e802'; } /* '' */
 .icon-mail-1:before { content: '\e801'; } /* '' */
 .icon-pencil:before { content: '\270e'; } /* '✎' */
 .icon-code:before { content: '\e714'; } /* '' */

@@ -130,8 +130,8 @@ icons:
   code: icon-code
   wires: icon-pencil
   app: icon-mobile
-  #site: icon-cloud
-  site: icon-globe
+  site: icon-cloud-1
+  #site: icon-globe
   mail: icon-mail-1
   twitter: icon-twitter-bird
   github: icon-github
