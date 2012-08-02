@@ -155,7 +155,7 @@ body {
   color: primary-color;
 }
 a {
-  color: #3ca9dc;
+  color: #238fc2;
   text-decoration: none;
 }
 a:hover {
@@ -287,7 +287,7 @@ ul.hl li {
 }
 .nav li a span {
   position: absolute;
-  background-color: #3ca9dc;
+  background-color: #238fc2;
   bottom: 0;
   left: 0;
   width: 0%;
@@ -309,7 +309,7 @@ ul.hl li {
 }
 .nav li.selected a i,
 .nav li a:hover i {
-  color: #3ca9dc;
+  color: #238fc2;
 }
 .nav li.selected a {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f0f0), color-stop(1, #fff));
@@ -356,8 +356,6 @@ ul.hl li {
   text-align: center;
   font-size: 18px;
   text-shadow: 1px 1px 2px #000;
-}
-.content .box .name {
   line-height: 30px;
 }
 .content .box .name i {
@@ -618,7 +616,7 @@ ul.hl li {
   transition: color 0.5s;
 }
 .contacts a:hover {
-  color: #3ca9dc;
+  color: #238fc2;
   text-decoration: none;
 }
 .updates {

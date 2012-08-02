@@ -581,5 +581,5 @@ routie({
   el.hoverIntent(hoverIn, hoverOut);
 })($('.content .has-details'));
 
-//$('.header .box:eq(1)').twitter();
-//$('.header .box:eq(2)').github();
+$('.header .box:eq(1)').twitter();
+$('.header .box:eq(2)').github();
