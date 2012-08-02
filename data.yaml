@@ -2,6 +2,27 @@
 tagline: UI/UX/Developer
 twitter: jgaui
 github: jgallen23
+nav:
+  -
+    name: All
+    url: "#"
+    class: all
+  -
+    name: Sites
+    url: "#sites"
+    class: site
+  -
+    name: Apps
+    url: "#apps"
+    class: app
+  -
+    name: Code
+    url: "#code"
+    class: code
+  -
+    name: Contact
+    url: "#contact"
+    class: contact
 services:
   -
     name: Front end development
@@ -16,23 +37,23 @@ contacts:
   -
     name: Email
     icon: mail 
-    href: mailto:me@gregallen.me 
+    url: mailto:me@gregallen.me 
   -
     name: Twitter
     icon: twitter 
-    href: http://twitter.com/jgaui
+    url: http://twitter.com/jgaui
   -
     name: Github
     icon: github
-    href: http://github.com/jgallen23
+    url: http://github.com/jgallen23
   -
     name: Linked In
     icon: linkedIn
-    href: 
+    url: 
   -
     name: Facebook
     icon: facebook 
-    href: http://facebook.com/jga23
+    url: http://facebook.com/jga23
 items:
   - 
     name: Kindspark

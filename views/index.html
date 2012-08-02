@@ -35,37 +35,15 @@
         </div>
       </div>
       <ul class="nav hl">
-        <li class="all">
-          <a href="#">
-            <i class="<%= icons['all'] %>"></i>
-						All
-						<span class="line"/>
-					</a>
-        </li>
-        <li class="site">
-          <a href="#sites">
-						Sites
-						<span class="line"/>
-					</a>
-        </li>
-        <li class="app">
-          <a href="#apps">
-						Apps
-						<span class="line"/>
-					</a>
-        </li>
-        <li class="code">
-          <a href="#code">
-						Code
-						<span class="line"/>
-					</a>
-        </li>
-        <li class="contact">
-          <a href="#contact">
-						Contact
-						<span class="line"/>
-					</a>
-        </li>
+        <% nav.forEach(function(item) { %>
+          <li class="<%= item.class %>">
+            <a href="<%= item.url %>">
+              <i class="<%= icons[item.class] %>"></i>
+              <%= item.name %>
+              <span class="line"/>
+            </a>
+          </li>
+        <% }) %>
       </ul>
       <div class="content col4">
         <% items.forEach(function(item) { %>
@@ -101,7 +79,7 @@
 					<ul class="hl contacts">
             <% contacts.forEach(function(contact) { %>
               <li>
-                <a href="<%= contact.href %>">
+                <a href="<%= contact.url %>">
                   <i class="<%= icons[contact.icon] %>"></i>
                   <%= contact.name %>
                 </a>
