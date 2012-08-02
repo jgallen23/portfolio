@@ -18,16 +18,18 @@ routie({
 
     $('.content .box').show();
   },
-  'sites': function() {
+  sites: function() {
     filter('site');
   },
-  'apps': function() {
+  apps: function() {
     filter('app');
   },
-  'code': function() {
+  code: function() {
     filter('code');
+  },
+  contact: function() {
+    filter('contact');
   }
-
 });
 
 /* content box */
