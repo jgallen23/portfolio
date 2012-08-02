@@ -36,6 +36,6 @@
 .icon-twitter-bird:before { content: '\f303'; } /* '' */
 .icon-github:before { content: '\f308'; } /* '' */
 .icon-linkedin-rect:before { content: '\f312'; } /* '' */
-.icon-globe:before { content: '𝌍'; } /* '\1d30d' */
-.icon-user:before { content: '👤'; } /* '\1f464' */
-.icon-mobile:before { content: '📱'; } /* '\1f4f1' */
+.icon-globe:before { content: '\1d30d'; } /* '\1d30d' */
+.icon-user:before { content: '\1f464'; } /* '\1f464' */
+.icon-mobile:before { content: '\1f4f1'; } /* '\1f4f1' */
