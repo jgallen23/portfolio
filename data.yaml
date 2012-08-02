@@ -81,6 +81,12 @@ items:
     type: site
     id: ehow
   -
+    name: Portfolio
+    type: code
+    id: portfolio
+    description: 
+      - You can view the source for this portfolio on github.
+  -
     name: The Venture Edge
     type: site
     id: ventureedge
@@ -88,12 +94,6 @@ items:
     name: n2Tec
     type: site
     id: n2tec
-  -
-    name: Portfolio
-    type: code
-    id: portfolio
-    description: 
-      - You can view the source for this portfolio on github.
   -
     name: jQuery TOC
     id: toc
