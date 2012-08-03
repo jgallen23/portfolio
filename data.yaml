@@ -37,7 +37,7 @@ contacts:
     url: http://github.com/jgallen23
   - name: Linked In
     icon: linkedIn
-    url: 
+    url: http://www.linkedin.com/in/jgregallen
   - name: Facebook
     icon: facebook 
     url: http://facebook.com/jga23
@@ -53,6 +53,7 @@ items:
   - name: Jotbox
     type: app
     id: jotbox
+    url: http://jotbox.in
     description: 
       - An iPhone app to send notes, scribbles and photos to yourself.  It's great for reminders and ideas.
       - Role: Spec'd and developed
@@ -60,6 +61,7 @@ items:
   - name: Visits
     type: app
     id: visits
+    url: http://getvisitsapp.com
     description:
       - Visits is a Mac menubar app that pulls in your Google Analytics data.
       - Role: Spec'd and developed
@@ -67,6 +69,7 @@ items:
   - name: eHow
     type: site
     id: ehow
+    url: http://www.ehow.com
     description:
       - Top 20 site that focuses on how-to content.
       - Title: Director of UI Engineering 
@@ -74,12 +77,14 @@ items:
   - name: Portfolio
     type: code
     id: portfolio
+    url: http://github.com/jgallen23/portfolio
     description: 
       - View this source code for this portfolio. 
       - Technology: HTML, Javascript, Stylus, jQuery, Routie, Node.js
   - name: The Venture Edge
     type: site
     id: ventureedge
+    url: http://theventureedge.com
     description:
       - A blog for tips on starting and running a successful buisness.
       - Role: Spec'd and developed
@@ -87,6 +92,7 @@ items:
   - name: n2Tec
     type: site
     id: n2tec
+    url: http://n2tec.org
     description:
       - National Network for Technology Entrepreneurship and Commercialization.
       - Role: Spec'd and developed
@@ -94,30 +100,35 @@ items:
   - name: TOC
     id: toc
     type: code
+    url: http://projects.jga.me/toc
     description:
       - jQuery plugin to generate a table of contents for your site.
       - Technology: Javascript, jQuery
   - name: Layouts
     id: layouts
     type: code
+    url: http://projects.jga.me/layouts
     description:
       - An Alfred plugin and applescript that allows you to move and resize your applications.
       - Technology: Applescript, Bash
   - name: HubInfo
     id: hubinfo
     type: code
+    url: http://projects.jga.me/hubinfo
     description:
       - jQuery plugin that wigetizes your github repo to be placed on your site.
       - Technology: Javascript, jQuery, Github API, JSONP
   - name: Routie
     id: routie
     type: code
+    url: http://projects.jga.me/routie
     description:
       - A tiny (800b) Javascript hash routing library.
       - Technology: Javascript
   - name: My Times
     type: app
     id: mytimes
+    url: http://itunes.apple.com/us/app/my-times/id368515340?mt=8
     description:
       - An iPad app for Google Reader.
       - Role: Spec'd and developed
@@ -125,6 +136,7 @@ items:
   - name: Resistance
     id: resistance
     type: code
+    url: http://github.com/jgallen23/resistance
     description:
       - A flow control library for Javascript.
       - Technology: Javascript
@@ -133,6 +145,7 @@ items:
   - name: Margaret Travolta
     id: travolta
     type: site
+    url: http://margarettravolta.com
     description:
       - Margaret Travolta's porfolio site.
       - Role: Spec'd and developed
