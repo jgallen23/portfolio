@@ -5,6 +5,10 @@ mash:
       - ui/fontello/css/portfolio.css
       - ui/styles/common.styl
   -
+    name: ie
+    files:
+      - ui/styles/fallbacks/ie.styl
+  -
     name: common
     files:
       - ui/vendor/jquery/jquery-1.7.2.min.js

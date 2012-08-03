@@ -1,6 +1,6 @@
 
 mash:
-	@./node_modules/.bin/masher --out ui/_dist --name common masher.yaml
+	@./node_modules/.bin/masher masher.yaml
 
 views:
 	@./node_modules/.bin/markx -i views/index.html -d data.yaml > index.html

@@ -252,6 +252,7 @@ ul.hl li {
   padding-left: 250px;
   height: 40px;
   line-height: 40px;
+  background-color: #f0f0f0;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #f0f0f0));
   background-image: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
   background-image: -moz-linear-gradient(top, #fff 0%, #f0f0f0 100%);
