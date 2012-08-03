@@ -1,11 +1,11 @@
 
 /* content boxes */
 .content .box {
-	transition: opacity 0.5s;
-	opacity: 1;
+  transition: opacity 0.5s;
+  opacity: 1;
 }
 .content .anim-out {
-	opacity: 0;
+  opacity: 0;
 }
 
 
@@ -13,40 +13,40 @@
 
 //init
 .preanim {
-	.header {
-		.updates {
-			transform: translateY(-300px);
-		}
-	}
-	.content .box {
-		//transform: scale(0);
+  .header {
+    .updates {
+      transform: translateY(-300px);
+    }
+  }
+  .content .box {
+    //transform: scale(0);
     opacity: 0;
-	}
+  }
 
-	.nav {
-		transform: translateX(100%);
-	}
+  .nav {
+    transform: translateX(100%);
+  }
 }
 
 //start
 .load {
-	.header {
-		.updates {
-			transform: translateY(0);
-			transition: -webkit-transform 0.5s ease 0.1s;
-		}
-	}
+  .header {
+    .updates {
+      transform: translateY(0);
+      transition: -webkit-transform 0.5s ease 0.1s;
+    }
+  }
 
-	.nav {
-		transform: translateX(0);
-		transition: -webkit-transform 0.4s ease 0.4s;
-	}
-	.content .box {
-		//animation: bounce 0.5s ease 0.5s;
-		//animation-fill-mode: forwards;
+  .nav {
+    transform: translateX(0);
+    transition: -webkit-transform 0.4s ease 0.4s;
+  }
+  .content .box {
+    //animation: bounce 0.5s ease 0.5s;
+    //animation-fill-mode: forwards;
     opacity: 1;
     transition: opacity 0.5s ease 0.5s;
-	}
+  }
 }
 
 @keyframes bounce {

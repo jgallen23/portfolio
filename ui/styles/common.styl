@@ -4,42 +4,42 @@
 global-reset()
 
 .clearfix {
-	clearfix()
+  clearfix()
 }
 
 * { 
-	box-sizing: border-box; 
+  box-sizing: border-box; 
 } 
 
 body {
-	background: #333;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
-	font-weight: 300;
-	font-size: 14px;
-	color: primary-color;
+  background: #333;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+  font-weight: 300;
+  font-size: 14px;
+  color: primary-color;
 }
 
 a { 
   color: color-link;
-	text-decoration: none;
+  text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
 }
 
 h1 {
-	font-size: 32px;
+  font-size: 32px;
 }
 
 h2 {
-	color: secondary-color;
+  color: secondary-color;
 }
 
 body > .frame {
-	background: url(../images/tiny_grid.png);
-	box-shadow: 0 0 20px 5px #000;
-	padding: 20px 0 0 0;
-	overflow: hidden;
+  background: url(../images/tiny_grid.png);
+  box-shadow: 0 0 20px 5px #000;
+  padding: 20px 0 0 0;
+  overflow: hidden;
 }
 
 @import 'layout'
