@@ -70,22 +70,22 @@
             </h3>
           </a>
         <% }) %>
-				<div class="box col contact">
-					<ul class="hl services">
+        <div class="box col contact">
+          <ul class="hl services">
             <% services.forEach(function(service) { %>
             <li>
               <i class="<%= icons[service.icon] %>"></i>
               <%= service.name %>
             </li>
             <% }) %>
-					</ul>
-					<h3 class="name">
+          </ul>
+          <h3 class="name">
             <i class="<%= icons['contact'] %>"></i>
             Services
           </h3>
-				</div>
-				<div class="box col contact">
-					<ul class="hl contacts">
+        </div>
+        <div class="box col contact">
+          <ul class="hl contacts">
             <% contacts.forEach(function(contact) { %>
               <li>
                 <a href="<%= contact.url %>">
@@ -94,12 +94,12 @@
                 </a>
               </li>
             <% }) %>
-					</ul>
-					<h3 class="name">
+          </ul>
+          <h3 class="name">
             <i class="<%= icons['contact'] %>"></i>
             Contact
           </h3>
-				</div>
+        </div>
       </div>
       <div class="footer">
         &copy 2012 Greg Allen
