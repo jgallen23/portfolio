@@ -19,12 +19,14 @@ nav:
     url: "#contact"
     class: contact
 services:
-  - name: Front end development
+  - name: Front End Development
     icon: code
-  - name: UI/UX (Wireframes/Flows)
+  - name: UI/UX (wireframes/flows)
     icon: wires 
   - name: iOS Development
     icon: app
+  - name: Node.js Development 
+    icon: code
 contacts:
   - name: Email
     icon: mail 
