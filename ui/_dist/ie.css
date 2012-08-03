@@ -1,0 +1,18 @@
+.content .box .name {
+  background: #000;
+}
+.content .box .description {
+  background: #93cfec;
+}
+i,
+.frame .contacts i {
+  display: none;
+}
+.contact .contacts {
+  margin: 10px 0;
+}
+.contact .contacts li {
+  margin: 0px 15px;
+  float: none;
+  text-align: left;
+}
