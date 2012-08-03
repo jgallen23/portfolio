@@ -1,4 +1,6 @@
 
+build: mash views
+
 mash:
 	@./node_modules/.bin/masher masher.yaml
 
@@ -8,6 +10,5 @@ views:
 preview:
 	@./node_modules/.bin/markx -i views/index.html -d data.yaml -p
 
-build: styles mash views
 
-.PHONY: views mash build preview styles
+.PHONY: views mash build preview
